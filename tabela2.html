@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link rel="stylesheet" href="./src/style.css">
+        <link rel="stylesheet" href="./src/freakflags.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <title>Tabela2</title>
+    </head>
+    <body class="textoLongo">
+        <!-- PESQUISA -->
+        <div id="pesquisa">
+            <i class="fas fa-times whiteText closeIcon fa-2x"></i>
+            <div id="TelaPesquisa" class="border-bottom border-light row d-flex justify-content-center align-items-center m-0 pb-1">
+                <input type="text" placeholder="Faça a sua busca" id="pesquisaInput"/>
+                <i class="fas fa-search whiteText SearchIcon" ></i>
+            </div>
+        </div>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-md navbar-dark text-center align-items-center barraDecorativa" id="navbar">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <a class="navbar-brand m-0" href="#">
+                        <img src="./static/images/tegra-logo.svg" id="icone"/>
+                    </a>
+                    <span class="TextDec lead" id="slogan">Relações com<br>Investidores</span>
+                    <button class="navbar-toggler m-0 p-0" type="button" data-toggle="collapse" id="botaoNavbar" data-target="#navbarResponsive">
+                        <span>
+                            <div id="nav-icon3">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse w-100" id="navbarResponsive">
+                    <div id="NavbarMobileBack"></div>
+                    <ul class="navbar-nav d-flex justify-content-between align-items-center pt-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle px-1 pb-0 d-flex justify-content-end align-items-center" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Lorem ipsum</a>
+                            <div class="dropdown-menu dropdown-menu-right dropDownComp py-2 mt-2" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                            </div>
+                            <hr class="l-hr d-md-none d-lg-none d-xl-none d-sm-block d-xs-block fa-2x mb-2">
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle px-1 pb-0 d-flex justify-content-end align-items-center" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Lorem ipsum</a>
+                            <div class="dropdown-menu dropdown-menu-right dropDownComp py-2 mt-2" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                            </div>
+                            <hr class="l-hr d-md-none d-lg-none d-xl-none d-sm-block d-xs-block fa-2x mb-2">
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle px-1 pb-0 d-flex justify-content-end align-items-center" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Lorem ipsum</a>
+                            <div class="dropdown-menu dropdown-menu-right dropDownComp py-2 mt-2" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                            </div>
+                            <hr class="l-hr d-md-none d-lg-none d-xl-none d-sm-block d-xs-block fa-2x mb-2">
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle px-1 pb-0 d-flex justify-content-end align-items-center" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Lorem ipsum</a>
+                            <div class="dropdown-menu dropdown-menu-right dropDownComp py-2 mt-2" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                            </div>
+                            <hr class="l-hr d-md-none d-lg-none d-xl-none d-sm-block d-xs-block fa-2x mb-2">
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle px-1 pb-0 d-flex justify-content-end align-items-center" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Lorem ipsum</a>
+                            <div class="dropdown-menu dropdown-menu-right dropDownComp py-2 mt-2" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                            </div>
+                            <hr class="l-hr d-md-none d-lg-none d-xl-none d-sm-block d-xs-block fa-2x mb-2">
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle px-1 pb-0 d-flex justify-content-end align-items-center" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Lorem ipsum</a>
+                            <div class="dropdown-menu dropdown-menu-right dropDownComp py-2 mt-2" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                                <a class="dropdown-item whiteText d-flex justify-content-end align-items-center" href="#">Lorem Ipsum</a>
+                            </div>
+                            <hr class="l-hr d-md-none d-lg-none d-xl-none d-sm-block d-xs-block fa-2x mb-2">
+                        </li>
+                        <li class="nav-item d-flex align-items-center justify-content-center pr-0 mr-2">
+                            <i class="fas fa-search fa-2x iconeLaranja pl-1 pb-1 SearchIcon pr-0" id="SearchIcon"></i>
+                        </li>
+                        <li id="bandeiras" class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle flagLen" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span id="placeholderFlag" class="fflag fflag-BR ff-md"></span></a>
+                            <div class="dropdown-menu dropdown-menu-right dropDownComp mt-2" aria-labelledby="navbarDropdown" id="linguagens">
+                                <a href="#" class="dropdown-item d-flex align-items-center justify-content-center flagLen"><span class="fflag fflag-US ff-md"></span></a>
+                                <a href="#" class="dropdown-item d-flex align-items-center justify-content-center flagLen"><span class="fflag fflag-FR ff-md"></span></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>        <!-- JUMBOTRON -->
+        <div class="jumbotron big-banner mb-0 jumbotron-textoLongo">
+            <div class="container">
+                <div class="col-md-8 mt-5 pt-4 whiteText">
+                    <div class="container d-flex row align-items-center pr-0">
+                        <span class="lead parag">Lorem ipsum</span>
+                        <i class="fas fa-chevron-right iconeLaranja px-2 d-none d-sm-lg-block d-xl-block"></i>
+                        <span class="lead parag d-none d-sm-lg-block d-xl-block">Lorem ipsum</span>
+                        <i class="fas fa-chevron-right iconeLaranja px-2"></i>
+                        <span class="lead parag">Lorem ipsum</span>
+                    </div>
+                    <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit Curabitur condimentum</h1>
+                </div>
+            </div>
+            <div id="componentStyleScreen">
+                <div class="componentTextoLongo"></div>
+            </div>
+            <div id="navbarFull"></div>
+        </div>
+        <!-- CONTENT -->
+        <div class="container d-flex justify-content-between">
+            <div class="p-0 col-lg-8 col-xl-8">
+                <div class="d-flex justify-content-between w-100 h-1">
+                    <i class="fas fa-chevron-left iconeLaranja setaAnos" id="esquerda"></i>
+                    <div class="d-flex row justify-content-between w-100 px-3">
+                        <p class="corTexto parag ano">2016</p>
+                        <p class="corTexto parag ano">2017</p>
+                        <p class="corTexto parag ano">2018</p>
+                        <p class="corTexto parag ano">2019</p>
+                        <p class="corTexto parag ano" id="anoAtivo">2020</p>
+                    </div>
+                    <i class="fas fa-chevron-right iconeLaranja setaAnos" id="direita"></i>
+                </div>
+                <hr class="h-hr mt-0">
+                <div class="d-flex flex-column w-100 h-1">
+                    <p class="corTexto fundoCinzaClaro h6 p-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    <div class="my-2 displayBoxDownload">
+                        <div>
+                            <div class="d-inline corTexto"><span class="textoClaro pr-2 d-block d-sm-inline d-xs-inline mb-0">00/00/0000</span>   Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+                            <i class="fas fa-download d-inline iconeLaranja ml-2"></i>
+                        </div>
+                        <div>
+                            <div class="d-inline corTexto"><span class="textoClaro pr-2 d-block d-sm-inline d-xs-inline mb-0">00/00/0000</span>   Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+                            <i class="fas fa-download d-inline iconeLaranja ml-2"></i>
+                        </div>                       
+                        <div>
+                            <div class="d-inline corTexto"><span class="textoClaro pr-2 d-block d-sm-inline d-xs-inline mb-0">00/00/0000</span>   Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+                            <i class="fas fa-download d-inline iconeLaranja ml-2"></i>
+                        </div>                        
+                        <div>
+                            <div class="d-inline corTexto"><span class="textoClaro pr-2 d-block d-sm-inline d-xs-inline mb-0">00/00/0000</span>   Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+                            <i class="fas fa-download d-inline iconeLaranja ml-2"></i>
+                        </div>                        
+                        <div>
+                            <div class="d-inline corTexto"><span class="textoClaro pr-2 d-block d-sm-inline d-xs-inline mb-0">00/00/0000</span>   Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+                            <i class="fas fa-download d-inline iconeLaranja ml-2"></i>
+                        </div>                        
+                        <div>
+                            <div class="d-inline corTexto"><span class="textoClaro pr-2 d-block d-sm-inline d-xs-inline mb-0">00/00/0000</span>   Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+                            <i class="fas fa-download d-inline iconeLaranja ml-2"></i>
+                        </div>
+                    </div>
+                    <p class="corTexto fundoCinzaClaro h6 p-2 mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    <div class="my-2 displayBoxDownload">
+                        <div>
+                            <div class="d-inline corTexto"><span class="textoClaro pr-2 d-block d-sm-inline d-xs-inline mb-0">00/00/0000</span>   Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+                            <i class="fas fa-download d-inline iconeLaranja ml-2"></i>
+                        </div>
+                        <div>
+                            <div class="d-inline corTexto"><span class="textoClaro pr-2 d-block d-sm-inline d-xs-inline mb-0">00/00/0000</span>   Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+                            <i class="fas fa-download d-inline iconeLaranja ml-2"></i>
+                        </div>                       
+                        <div>
+                            <div class="d-inline corTexto"><span class="textoClaro pr-2 d-block d-sm-inline d-xs-inline mb-0">00/00/0000</span>   Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+                            <i class="fas fa-download d-inline iconeLaranja ml-2"></i>
+                        </div>                        
+                        <div>
+                            <div class="d-inline corTexto"><span class="textoClaro pr-2 d-block d-sm-inline d-xs-inline mb-0">00/00/0000</span>   Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+                            <i class="fas fa-download d-inline iconeLaranja ml-2"></i>
+                        </div>                        
+                        <div>
+                            <div class="d-inline corTexto"><span class="textoClaro pr-2 d-block d-sm-inline d-xs-inline mb-0">00/00/0000</span>   Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+                            <i class="fas fa-download d-inline iconeLaranja ml-2"></i>
+                        </div>                        
+                        <div>
+                            <div class="d-inline corTexto"><span class="textoClaro pr-2 d-block d-sm-inline d-xs-inline mb-0">00/00/0000</span>   Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+                            <i class="fas fa-download d-inline iconeLaranja ml-2"></i>
+                        </div>
+                    </div>
+                    <p class="corTexto fundoCinzaClaro h6 p-2 mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    <div class="my-2 displayBoxDownload">
+                        <div>
+                            <div class="d-inline corTexto"><span class="textoClaro pr-2 d-block d-sm-inline d-xs-inline mb-0">00/00/0000</span>   Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+                            <i class="fas fa-download d-inline iconeLaranja ml-2"></i>
+                        </div>
+                        <div>
+                            <div class="d-inline corTexto"><span class="textoClaro pr-2 d-block d-sm-inline d-xs-inline mb-0">00/00/0000</span>   Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+                            <i class="fas fa-download d-inline iconeLaranja ml-2"></i>
+                        </div>                       
+                        <div>
+                            <div class="d-inline corTexto"><span class="textoClaro pr-2 d-block d-sm-inline d-xs-inline mb-0">00/00/0000</span>   Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+                            <i class="fas fa-download d-inline iconeLaranja ml-2"></i>
+                        </div>                        
+                        <div>
+                            <div class="d-inline corTexto"><span class="textoClaro pr-2 d-block d-sm-inline d-xs-inline mb-0">00/00/0000</span>   Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+                            <i class="fas fa-download d-inline iconeLaranja ml-2"></i>
+                        </div>                        
+                        <div>
+                            <div class="d-inline corTexto"><span class="textoClaro pr-2 d-block d-sm-inline d-xs-inline mb-0">00/00/0000</span>   Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+                            <i class="fas fa-download d-inline iconeLaranja ml-2"></i>
+                        </div>                        
+                        <div>
+                            <div class="d-inline corTexto"><span class="textoClaro pr-2 d-block d-sm-inline d-xs-inline mb-0">00/00/0000</span>   Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+                            <i class="fas fa-download d-inline iconeLaranja ml-2"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-none d-lg-block d-xl-block">
+                <div class="mb-3">
+                    <!-- CAIXA -->
+                    <div class="caixa sumario">
+                        <div class="trianguloPonta"></div>
+                        <div class="contentBox p-3">
+                            <p class="h6 corTexto m-0 textoH6">Lorem ipsum</p>
+                            <hr class="h-hr">
+                            <a href="#">
+                                <p class="lead parag corTexto Navigator">Lorem ipsum dolor sit</p>
+                            </a>
+                            <hr>
+                            <a href="#">
+                                <p class="lead parag corTexto Navigator">Lorem ipsum dolor sit</p>
+                            </a>
+                            <hr>
+                            <a href="#">
+                                <p class="lead parag corTexto Navigator">Lorem ipsum dolor sit</p>
+                            </a>
+                            <hr>
+                            <a href="#">
+                                <p class="lead parag corTexto Navigator">Lorem ipsum dolor sit</p>
+                            </a>
+                            <hr>
+                            <a href="#">
+                                <p class="lead parag corTexto Navigator">Lorem ipsum dolor sit</p>
+                            </a>
+                            <hr>
+                            <a href="#">
+                                <p class="lead parag corTexto Navigator">Lorem ipsum dolor sit</p>
+                            </a>
+                            <hr>
+                            <a href="#">
+                                <p class="lead parag corTexto Navigator">Lorem ipsum dolor sit</p>
+                            </a>
+                            <hr>
+                            <a href="#">
+                                <p class="lead parag corTexto Navigator">Lorem ipsum dolor sit</p>
+                            </a>
+                            <hr>
+                            <a href="#">
+                                <p class="lead parag corTexto Navigator">Lorem ipsum dolor sit</p>
+                            </a>
+                            <hr>
+                            <a href="#">
+                                <p class="lead parag corTexto Navigator">Lorem ipsum dolor sit</p>
+                            </a>
+                            <hr>
+                            <a href="#">
+                                <p class="lead parag corTexto Navigator">Lorem ipsum dolor sit</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container-fluid fundoCinza pt-5 mt-5">
+                <div class="container d-flex align-items-end flex-column">
+                    <div class="container d-flex row justify-content-between pr-5 lead">
+                        <div class="d-flex mb-5 mr-3">
+                            <a class="navbar-brand m-0 p-0 d-flex align-items-start" href="#">
+                                <img src="./static/images/tegra-logo.svg" id="icone"/>
+                            </a>
+                            <span class="TextDec pl-2 lead">Relações com<br>Investidores</span>
+                        </div>
+                        <div class="footerOnlyElement mb-4">
+                            <a href="#" class=" d-block parag pb-2 whiteText">Lorem ipsum dolor sit</a>
+                            <a href="#" class=" d-block parag pb-2 whiteText">Lorem ipsum</a>
+                            <a href="#" class=" d-block parag pb-2 whiteText">Lorem ipsum dolor sit</a>
+                            <a href="#" class=" d-block parag pb-2 whiteText">Lorem ipsum</a>
+                            <a href="#" class=" d-block parag pb-2 whiteText">Lorem ipsum dolor sit</a>
+                            <a href="#" class=" d-block parag pb-2 whiteText">Lorem ipsum</a>
+                            <a href="#" class=" d-block parag pb-2 whiteText">Lorem ipsum dolor sit</a>
+                        </div>
+                        <div class="border-left pl-2 footerHidenElement d-none d-lg-inline d-xl-inline">
+                            <a href="#" class=" d-block parag pb-2 whiteText">Lorem ipsum dolor sit</a>
+                            <a href="#" class=" d-block parag pb-2 whiteText">Lorem ipsum</a>
+                            <a href="#" class=" d-block parag pb-2 whiteText">Lorem ipsum dolor sit</a>
+                            <a href="#" class=" d-block parag pb-2 whiteText">Lorem ipsum</a>
+                            <a href="#" class=" d-block parag pb-2 whiteText">Lorem ipsum dolor sit</a>
+                            <a href="#" class=" d-block parag pb-2 whiteText">Lorem ipsum</a>
+                            <a href="#" class=" d-block parag pb-2 whiteText">Lorem ipsum dolor sit</a>
+                        </div>
+                        <div class="border-left pl-2 footerHidenElement d-none d-lg-inline d-xl-inline">
+                            <a href="#" class=" d-block parag pb-2 whiteText">Lorem ipsum dolor sit</a>
+                            <a href="#" class=" d-block parag pb-2 whiteText">Lorem ipsum</a>
+                            <a href="#" class=" d-block parag pb-2 whiteText">Lorem ipsum dolor sit</a>
+                            <a href="#" class=" d-block parag pb-2 whiteText">Lorem ipsum</a>
+                            <a href="#" class=" d-block parag pb-2 whiteText">Lorem ipsum dolor sit</a>
+                        </div>
+                    </div>
+                    <p class="parag lead mt-3 mb-5 direitos">© 2020 TEGRA Incorporadora. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <script src="./static/index.js"></script>
+    </body>
+</html>
