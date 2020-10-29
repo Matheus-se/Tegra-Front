@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const setaEsquerda = document.querySelector('#esquerda')
     const setaDireita = document.querySelector('#direita')
     const anos = document.querySelector('#anos')
+    const backnavbarDisplay = document.querySelector('#NavbarMobileBack')
 
 
     if (anos !== null) {
@@ -67,6 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const navbarListener = function() {
         navbar.className === 'open' ? navbar.className = '' : navbar.className = 'open'
+        backnavbarDisplay.style.display = 'block'
         window.scrollTo(0, 0);
         document.body.style.overflow == "hidden" ? document.body.style.overflow = "" : document.body.style.overflow = "hidden"
     }
