@@ -79,10 +79,10 @@ footer * {
 .pdfs {
   flex: 1 1 auto;
 }
-ul.nav-pills {
+.swiper-container {
   position: relative;
 }
-.nav-pills::after {
+.swiper-container::after {
   content: "";
   width: 100%;
   height: 2.5px;
