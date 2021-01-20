@@ -23,18 +23,18 @@ nav * {
 .navbar-brand img {
   height: 40px;
 }
-.nav-link {
+.swiper-slide .nav-link {
   color: #adadab;
   font-weight: bold;
 }
-.nav-link.active {
+.swiper-slide .nav-link.active {
   background-color: transparent !important;
   border-radius: 0 !important;
   color: #60605d !important;
   font-weight: bold;
   position: relative;
 }
-.nav-link.active::after {
+.swiper-slide .nav-link.active::after {
   content: '';
   width: 100%;
   position: absolute;
@@ -450,7 +450,7 @@ h1 {
     position: fixed;
     left: 0px;
   }
-  li.nav-item {
+  .navbar-nav li.nav-item {
     width: 100%;
     justify-content: flex-end;
     display: flex;
@@ -463,7 +463,7 @@ h1 {
   nav {
     padding: 0.5rem 0rem !important;
   }
-  .nav-item > a {
+  .navbar-nav .nav-item > a {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
