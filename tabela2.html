@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
@@ -245,8 +250,12 @@
           <div aria-label="breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="#">Lorem Ipsum</a></li>
-              <li class="breadcrumb-item d-none d-lg-block"><a href="#">Lorem Ipsum</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Lorem Ipsum</li>
+              <li class="breadcrumb-item d-none d-lg-block">
+                <a href="#">Lorem Ipsum</a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Lorem Ipsum
+              </li>
             </ol>
           </div>
           <h1>
@@ -261,296 +270,1081 @@
       <div id="navbarFull"></div>
     </div>
     <!-- CONTENT -->
-    <div class="container d-flex justify-content-between">
+    <div
+      class="container d-flex justify-content-between content-container-table1"
+    >
       <div class="p-0 col-lg-8 col-xl-8">
-        <div class="d-flex justify-content-between w-100 h-1">
-          <i
-            class="fas fa-chevron-left icone-laranja setaAnos"
-            id="esquerda"
-          ></i>
-          <div class="d-flex row justify-content-between w-100 px-3" id="anos">
-            <p class="parag ano">2016</p>
-            <p class="parag ano">2017</p>
-            <p class="parag ano">2018</p>
-            <p class="parag ano">2019</p>
-            <p class="parag ano" id="anoAtivo">2020</p>
-          </div>
-          <i
-            class="fas fa-chevron-right icone-laranja setaAnos"
-            id="direita"
-          ></i>
+        <div class="swiper-container">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <ul
+            class="nav nav-pills d-flex justify-content-between align-items-center swiper-wrapper flex-nowrap"
+            id="pills-tab"
+            role="tablist"
+          >
+            <li class="nav-item swiper-slide">
+              <a
+                class="nav-link active text-center"
+                id="pills-2015-tab"
+                data-toggle="pill"
+                href="#pills-2015"
+                role="tab"
+                aria-controls="pills-2015"
+                aria-selected="true"
+                >2015</a
+              >
+            </li>
+            <li class="nav-item swiper-slide">
+              <a
+                class="nav-link text-center"
+                id="pills-2016-tab"
+                data-toggle="pill"
+                href="#pills-2016"
+                role="tab"
+                aria-controls="pills-2016"
+                aria-selected="true"
+                >2016</a
+              >
+            </li>
+            <li class="nav-item swiper-slide">
+              <a
+                class="nav-link text-center"
+                id="pills-2017-tab"
+                data-toggle="pill"
+                href="#pills-2017"
+                role="tab"
+                aria-controls="pills-2017"
+                aria-selected="false"
+                >2017</a
+              >
+            </li>
+            <li class="nav-item swiper-slide">
+              <a
+                class="nav-link text-center"
+                id="pills-2018-tab"
+                data-toggle="pill"
+                href="#pills-2018"
+                role="tab"
+                aria-controls="pills-2018"
+                aria-selected="false"
+                >2018</a
+              >
+            </li>
+            <li class="nav-item swiper-slide">
+              <a
+                class="nav-link text-center"
+                id="pills-2019-tab"
+                data-toggle="pill"
+                href="#pills-2019"
+                role="tab"
+                aria-controls="pills-2019"
+                aria-selected="false"
+                >2019</a
+              >
+            </li>
+            <li class="nav-item swiper-slide">
+              <a
+                class="nav-link text-center"
+                id="pills-2020-tab"
+                data-toggle="pill"
+                href="#pills-2020"
+                role="tab"
+                aria-controls="pills-2020"
+                aria-selected="false"
+                >2020</a
+              >
+            </li>
+          </ul>
         </div>
-        <hr class="h-hr mt-0" />
-        <div class="d-flex flex-column w-100 h-1">
-          <p class="fundoCinzaClaro h6 p-2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-          <div class="my-2 displayBoxDownload">
+        <div class="tab-content mt-4" id="pills-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="pills-2015"
+            role="tabpanel"
+            aria-labelledby="pills-2015-tab"
+          >
             <div>
-              <div class="d-inline">
-                <span
-                  class="textoClaro pr-2 d-block d-sm-inline d-xs-inline mb-0"
-                  >00/00/0000</span
-                >
-                Lorem ipsum dolor sit amet, consectetur adipiscing
+              <div class="table-2-content">
+                <div class="title-wrapper mb-2">
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amet, consectetur adpiscing elit.
+                  </p>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
               </div>
-              <i class="fas fa-download d-inline icone-laranja ml-2"></i>
-            </div>
-            <div>
-              <div class="d-inline">
-                <span
-                  class="textoClaro pr-2 d-block d-sm-inline d-xs-inline mb-0"
-                  >00/00/0000</span
-                >
-                Lorem ipsum dolor sit amet, consectetur adipiscing
+              <div class="table-2-content mt-4">
+                <div class="title-wrapper mb-2">
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amet, consectetur adpiscing elit.
+                  </p>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
               </div>
-              <i class="fas fa-download d-inline icone-laranja ml-2"></i>
-            </div>
-            <div>
-              <div class="d-inline">
-                <span
-                  class="textoClaro pr-2 d-block d-sm-inline d-xs-inline mb-0"
-                  >00/00/0000</span
-                >
-                Lorem ipsum dolor sit amet, consectetur adipiscing
+              <div class="table-2-content mt-4">
+                <div class="title-wrapper mb-2">
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amet, consectetur adpiscing elit.
+                  </p>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
               </div>
-              <i class="fas fa-download d-inline icone-laranja ml-2"></i>
-            </div>
-            <div>
-              <div class="d-inline">
-                <span
-                  class="textoClaro pr-2 d-block d-sm-inline d-xs-inline mb-0"
-                  >00/00/0000</span
-                >
-                Lorem ipsum dolor sit amet, consectetur adipiscing
-              </div>
-              <i class="fas fa-download d-inline icone-laranja ml-2"></i>
-            </div>
-            <div>
-              <div class="d-inline">
-                <span
-                  class="textoClaro pr-2 d-block d-sm-inline d-xs-inline mb-0"
-                  >00/00/0000</span
-                >
-                Lorem ipsum dolor sit amet, consectetur adipiscing
-              </div>
-              <i class="fas fa-download d-inline icone-laranja ml-2"></i>
-            </div>
-            <div>
-              <div class="d-inline">
-                <span
-                  class="textoClaro pr-2 d-block d-sm-inline d-xs-inline mb-0"
-                  >00/00/0000</span
-                >
-                Lorem ipsum dolor sit amet, consectetur adipiscing
-              </div>
-              <i class="fas fa-download d-inline icone-laranja ml-2"></i>
             </div>
           </div>
-          <p class="fundoCinzaClaro h6 p-2 mt-3">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-          <div class="my-2 displayBoxDownload">
+          <div
+            class="tab-pane fade show"
+            id="pills-2016"
+            role="tabpanel"
+            aria-labelledby="pills-2016-tab"
+          >
             <div>
-              <div class="d-inline">
-                <span
-                  class="textoClaro pr-2 d-block d-sm-inline d-xs-inline mb-0"
-                  >00/00/0000</span
-                >
-                Lorem ipsum dolor sit amet, consectetur adipiscing
+              <div class="table-2-content">
+                <div class="title-wrapper mb-2">
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amet, consectetur adpiscing elit.
+                  </p>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
               </div>
-              <i class="fas fa-download d-inline icone-laranja ml-2"></i>
-            </div>
-            <div>
-              <div class="d-inline">
-                <span
-                  class="textoClaro pr-2 d-block d-sm-inline d-xs-inline mb-0"
-                  >00/00/0000</span
-                >
-                Lorem ipsum dolor sit amet, consectetur adipiscing
+              <div class="table-2-content mt-4">
+                <div class="title-wrapper mb-2">
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amet, consectetur adpiscing elit.
+                  </p>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
               </div>
-              <i class="fas fa-download d-inline icone-laranja ml-2"></i>
-            </div>
-            <div>
-              <div class="d-inline">
-                <span
-                  class="textoClaro pr-2 d-block d-sm-inline d-xs-inline mb-0"
-                  >00/00/0000</span
-                >
-                Lorem ipsum dolor sit amet, consectetur adipiscing
+              <div class="table-2-content mt-4">
+                <div class="title-wrapper mb-2">
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amet, consectetur adpiscing elit.
+                  </p>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
               </div>
-              <i class="fas fa-download d-inline icone-laranja ml-2"></i>
-            </div>
-            <div>
-              <div class="d-inline">
-                <span
-                  class="textoClaro pr-2 d-block d-sm-inline d-xs-inline mb-0"
-                  >00/00/0000</span
-                >
-                Lorem ipsum dolor sit amet, consectetur adipiscing
-              </div>
-              <i class="fas fa-download d-inline icone-laranja ml-2"></i>
-            </div>
-            <div>
-              <div class="d-inline">
-                <span
-                  class="textoClaro pr-2 d-block d-sm-inline d-xs-inline mb-0"
-                  >00/00/0000</span
-                >
-                Lorem ipsum dolor sit amet, consectetur adipiscing
-              </div>
-              <i class="fas fa-download d-inline icone-laranja ml-2"></i>
-            </div>
-            <div>
-              <div class="d-inline">
-                <span
-                  class="textoClaro pr-2 d-block d-sm-inline d-xs-inline mb-0"
-                  >00/00/0000</span
-                >
-                Lorem ipsum dolor sit amet, consectetur adipiscing
-              </div>
-              <i class="fas fa-download d-inline icone-laranja ml-2"></i>
             </div>
           </div>
-          <p class="fundoCinzaClaro h6 p-2 mt-3">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-          <div class="my-2 displayBoxDownload">
+          <div
+            class="tab-pane fade"
+            id="pills-2017"
+            role="tabpanel"
+            aria-labelledby="pills-2017-tab"
+          >
             <div>
-              <div class="d-inline">
-                <span
-                  class="textoClaro pr-2 d-block d-sm-inline d-xs-inline mb-0"
-                  >00/00/0000</span
-                >
-                Lorem ipsum dolor sit amet, consectetur adipiscing
+              <div class="table-2-content">
+                <div class="title-wrapper mb-2">
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amet, consectetur adpiscing elit.
+                  </p>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
               </div>
-              <i class="fas fa-download d-inline icone-laranja ml-2"></i>
+              <div class="table-2-content mt-4">
+                <div class="title-wrapper mb-2">
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amet, consectetur adpiscing elit.
+                  </p>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+              </div>
+              <div class="table-2-content mt-4">
+                <div class="title-wrapper mb-2">
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amet, consectetur adpiscing elit.
+                  </p>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+              </div>
             </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-2018"
+            role="tabpanel"
+            aria-labelledby="pills-2018-tab"
+          >
             <div>
-              <div class="d-inline">
-                <span
-                  class="textoClaro pr-2 d-block d-sm-inline d-xs-inline mb-0"
-                  >00/00/0000</span
-                >
-                Lorem ipsum dolor sit amet, consectetur adipiscing
+              <div class="table-2-content">
+                <div class="title-wrapper mb-2">
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amet, consectetur adpiscing elit.
+                  </p>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
               </div>
-              <i class="fas fa-download d-inline icone-laranja ml-2"></i>
+              <div class="table-2-content mt-4">
+                <div class="title-wrapper mb-2">
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amet, consectetur adpiscing elit.
+                  </p>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+              </div>
+              <div class="table-2-content mt-4">
+                <div class="title-wrapper mb-2">
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amet, consectetur adpiscing elit.
+                  </p>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+              </div>
             </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-2019"
+            role="tabpanel"
+            aria-labelledby="pills-2019-tab"
+          >
             <div>
-              <div class="d-inline">
-                <span
-                  class="textoClaro pr-2 d-block d-sm-inline d-xs-inline mb-0"
-                  >00/00/0000</span
-                >
-                Lorem ipsum dolor sit amet, consectetur adipiscing
+              <div class="table-2-content">
+                <div class="title-wrapper mb-2">
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amet, consectetur adpiscing elit.
+                  </p>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
               </div>
-              <i class="fas fa-download d-inline icone-laranja ml-2"></i>
+              <div class="table-2-content mt-4">
+                <div class="title-wrapper mb-2">
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amet, consectetur adpiscing elit.
+                  </p>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+              </div>
+              <div class="table-2-content mt-4">
+                <div class="title-wrapper mb-2">
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amet, consectetur adpiscing elit.
+                  </p>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+              </div>
             </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-2020"
+            role="tabpanel"
+            aria-labelledby="pills-2020-tab"
+          >
             <div>
-              <div class="d-inline">
-                <span
-                  class="textoClaro pr-2 d-block d-sm-inline d-xs-inline mb-0"
-                  >00/00/0000</span
-                >
-                Lorem ipsum dolor sit amet, consectetur adipiscing
+              <div class="table-2-content">
+                <div class="title-wrapper mb-2">
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amet, consectetur adpiscing elit.
+                  </p>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
               </div>
-              <i class="fas fa-download d-inline icone-laranja ml-2"></i>
-            </div>
-            <div>
-              <div class="d-inline">
-                <span
-                  class="textoClaro pr-2 d-block d-sm-inline d-xs-inline mb-0"
-                  >00/00/0000</span
-                >
-                Lorem ipsum dolor sit amet, consectetur adipiscing
+              <div class="table-2-content mt-4">
+                <div class="title-wrapper mb-2">
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amet, consectetur adpiscing elit.
+                  </p>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
               </div>
-              <i class="fas fa-download d-inline icone-laranja ml-2"></i>
-            </div>
-            <div>
-              <div class="d-inline">
-                <span
-                  class="textoClaro pr-2 d-block d-sm-inline d-xs-inline mb-0"
-                  >00/00/0000</span
-                >
-                Lorem ipsum dolor sit amet, consectetur adipiscing
+              <div class="table-2-content mt-4">
+                <div class="title-wrapper mb-2">
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amet, consectetur adpiscing elit.
+                  </p>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center pdfs-table2 mb-2">
+                  <p class="mr-2 m-0 data">00/00/0000</p>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amerm consectetur adpiscing
+                  </p>
+                  <i class="fas fa-download fa-sm ml-2"></i>
+                </div>
               </div>
-              <i class="fas fa-download d-inline icone-laranja ml-2"></i>
             </div>
           </div>
         </div>
       </div>
       <div class="row d-none d-lg-block d-xl-block">
         <div class="mb-3">
-          <!-- box -->
+          <!-- BOX -->
           <div class="box sumario">
             <div class="edge-triangle"></div>
             <div class="content-box p-3">
               <p class="h6 m-0 textoH6">Lorem ipsum</p>
               <hr class="h-hr" />
               <a href="#">
-                <p class="lead parag Navigator">
-                  Lorem ipsum dolor sit
-                </p>
+                <p class="lead parag Navigator">Lorem ipsum dolor sit</p>
               </a>
               <hr />
               <a href="#">
-                <p class="lead parag Navigator">
-                  Lorem ipsum dolor sit
-                </p>
+                <p class="lead parag Navigator">Lorem ipsum dolor sit</p>
               </a>
               <hr />
               <a href="#">
-                <p class="lead parag Navigator">
-                  Lorem ipsum dolor sit
-                </p>
+                <p class="lead parag Navigator">Lorem ipsum dolor sit</p>
               </a>
               <hr />
               <a href="#">
-                <p class="lead parag Navigator">
-                  Lorem ipsum dolor sit
-                </p>
+                <p class="lead parag Navigator">Lorem ipsum dolor sit</p>
               </a>
               <hr />
               <a href="#">
-                <p class="lead parag Navigator">
-                  Lorem ipsum dolor sit
-                </p>
+                <p class="lead parag Navigator">Lorem ipsum dolor sit</p>
               </a>
               <hr />
               <a href="#">
-                <p class="lead parag Navigator">
-                  Lorem ipsum dolor sit
-                </p>
+                <p class="lead parag Navigator">Lorem ipsum dolor sit</p>
               </a>
               <hr />
               <a href="#">
-                <p class="lead parag Navigator">
-                  Lorem ipsum dolor sit
-                </p>
+                <p class="lead parag Navigator">Lorem ipsum dolor sit</p>
               </a>
               <hr />
               <a href="#">
-                <p class="lead parag Navigator">
-                  Lorem ipsum dolor sit
-                </p>
+                <p class="lead parag Navigator">Lorem ipsum dolor sit</p>
               </a>
               <hr />
               <a href="#">
-                <p class="lead parag Navigator">
-                  Lorem ipsum dolor sit
-                </p>
+                <p class="lead parag Navigator">Lorem ipsum dolor sit</p>
               </a>
               <hr />
               <a href="#">
-                <p class="lead parag Navigator">
-                  Lorem ipsum dolor sit
-                </p>
+                <p class="lead parag Navigator">Lorem ipsum dolor sit</p>
               </a>
               <hr />
               <a href="#">
-                <p class="lead parag Navigator">
-                  Lorem ipsum dolor sit
-                </p>
+                <p class="lead parag Navigator">Lorem ipsum dolor sit</p>
               </a>
             </div>
           </div>
@@ -558,73 +1352,48 @@
       </div>
     </div>
     <footer>
-      <div class="container-fluid fundoCinza pt-5 mt-5">
-        <div class="container d-flex align-items-end flex-column">
-          <div class="container d-flex row justify-content-between pr-5 lead">
-            <div class="d-flex mb-5 mr-3">
-              <a class="navbar-brand m-0 p-0 d-flex align-items-start" href="#">
-                <img src="./static/images/tegra-logo.svg" id="icone" />
-              </a>
-              <span class="text-dec pl-2 lead"
-                >Relações com<br />Investidores</span
-              >
-            </div>
-            <div class="footerOnlyElement mb-4">
-              <a href="#" class="d-block parag pb-2 whiteText"
-                >Lorem ipsum dolor sit</a
-              >
-              <a href="#" class="d-block parag pb-2 whiteText">Lorem ipsum</a>
-              <a href="#" class="d-block parag pb-2 whiteText"
-                >Lorem ipsum dolor sit</a
-              >
-              <a href="#" class="d-block parag pb-2 whiteText">Lorem ipsum</a>
-              <a href="#" class="d-block parag pb-2 whiteText"
-                >Lorem ipsum dolor sit</a
-              >
-              <a href="#" class="d-block parag pb-2 whiteText">Lorem ipsum</a>
-              <a href="#" class="d-block parag pb-2 whiteText"
-                >Lorem ipsum dolor sit</a
-              >
-            </div>
-            <div
-              class="border-left pl-2 footerHidenElement d-none d-lg-inline d-xl-inline"
+      <div class="container d-flex align-items-end flex-column">
+        <div class="container d-flex row justify-content-between pr-5 lead">
+          <div class="d-flex mb-5 mr-3">
+            <a
+              class="navbar-brand m-0 p-0 mr-3 d-flex align-items-start"
+              href="#"
             >
-              <a href="#" class="d-block parag pb-2 whiteText"
-                >Lorem ipsum dolor sit</a
-              >
-              <a href="#" class="d-block parag pb-2 whiteText">Lorem ipsum</a>
-              <a href="#" class="d-block parag pb-2 whiteText"
-                >Lorem ipsum dolor sit</a
-              >
-              <a href="#" class="d-block parag pb-2 whiteText">Lorem ipsum</a>
-              <a href="#" class="d-block parag pb-2 whiteText"
-                >Lorem ipsum dolor sit</a
-              >
-              <a href="#" class="d-block parag pb-2 whiteText">Lorem ipsum</a>
-              <a href="#" class="d-block parag pb-2 whiteText"
-                >Lorem ipsum dolor sit</a
-              >
-            </div>
-            <div
-              class="border-left pl-2 footerHidenElement d-none d-lg-inline d-xl-inline"
-            >
-              <a href="#" class="d-block parag pb-2 whiteText"
-                >Lorem ipsum dolor sit</a
-              >
-              <a href="#" class="d-block parag pb-2 whiteText">Lorem ipsum</a>
-              <a href="#" class="d-block parag pb-2 whiteText"
-                >Lorem ipsum dolor sit</a
-              >
-              <a href="#" class="d-block parag pb-2 whiteText">Lorem ipsum</a>
-              <a href="#" class="d-block parag pb-2 whiteText"
-                >Lorem ipsum dolor sit</a
-              >
-            </div>
+              <img src="./static/images/tegra-logo.svg" />
+            </a>
+            <p class="d-inline-block lead text-dec text-left m-0">
+              Relações com<br />Investidores
+            </p>
           </div>
-          <p class="parag lead mt-3 mb-3 text-right direitos">
-            © 2020 TEGRA Incorporadora. All rights reserved.
-          </p>
+          <div class="footerOnlyElement">
+            <a href="#" class="d-block parag pb-2">Lorem ipsum dolor sit</a>
+            <a href="#" class="d-block parag pb-2">Lorem ipsum</a>
+            <a href="#" class="d-block parag pb-2">Lorem ipsum dolor sit</a>
+            <a href="#" class="d-block parag pb-2">Lorem ipsum</a>
+            <a href="#" class="d-block parag pb-2">Lorem ipsum dolor sit</a>
+            <a href="#" class="d-block parag pb-2">Lorem ipsum</a>
+            <a href="#" class="d-block parag pb-2">Lorem ipsum dolor sit</a>
+          </div>
+          <div class="pl-2 footer-hiden-element d-none d-lg-inline d-xl-inline">
+            <a href="#" class="d-block parag pb-2">Lorem ipsum dolor sit</a>
+            <a href="#" class="d-block parag pb-2">Lorem ipsum</a>
+            <a href="#" class="d-block parag pb-2">Lorem ipsum dolor sit</a>
+            <a href="#" class="d-block parag pb-2">Lorem ipsum</a>
+            <a href="#" class="d-block parag pb-2">Lorem ipsum dolor sit</a>
+            <a href="#" class="d-block parag pb-2">Lorem ipsum</a>
+            <a href="#" class="d-block parag pb-2">Lorem ipsum dolor sit</a>
+          </div>
+          <div class="pl-2 footer-hiden-element d-none d-lg-inline d-xl-inline">
+            <a href="#" class="d-block parag pb-2">Lorem ipsum dolor sit</a>
+            <a href="#" class="d-block parag pb-2">Lorem ipsum</a>
+            <a href="#" class="d-block parag pb-2">Lorem ipsum dolor sit</a>
+            <a href="#" class="d-block parag pb-2">Lorem ipsum</a>
+            <a href="#" class="d-block parag pb-2">Lorem ipsum dolor sit</a>
+          </div>
         </div>
+        <p class="parag lead mt-3 mb-3 text-right">
+          © 2020 TEGRA Incorporadora. All rights reserved.
+        </p>
       </div>
     </footer>
     <script
@@ -637,6 +1406,9 @@
       integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./static/index.js"></script>
+    <script src="./static/swiper-tables.js" type="module"></script>
   </body>
 </html>

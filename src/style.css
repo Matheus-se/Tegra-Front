@@ -137,6 +137,23 @@ footer {
   background-color: #60605d;
   padding-top: 1rem;
 }
+.title-wrapper > p {
+  font-size: 20px;
+  color: #60605d;
+  background-color: #e6e6e6;
+  font-weight: bold;
+  padding: 10px;
+}
+.table-2-content {
+  font-size: 16px;
+  color: #60605d;
+}
+.pdfs-table2 p.data {
+  color: #adadab;
+}
+.pdfs-table2 i {
+  color: #ebb92d;
+}
 .swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after {
   content: 'next';
   font-size: 22px;
