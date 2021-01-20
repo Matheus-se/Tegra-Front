@@ -137,6 +137,16 @@ footer {
   background-color: #60605d;
   padding-top: 1rem;
 }
+.swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after {
+  content: 'next';
+  font-size: 22px;
+  color: #ebb92d;
+}
+.swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after {
+  content: 'prev';
+  font-size: 22px;
+  color: #ebb92d;
+}
 .specialFontSize {
   font-size: 15px;
 }
