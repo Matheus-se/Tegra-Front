@@ -389,6 +389,9 @@ h1 {
   }
 }
 @media (max-width: 767px) {
+  .first-child {
+    margin-bottom: 1rem;
+  }
   nav.home {
     margin-bottom: 3rem !important;
   }
