@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="textoLongo">
+<html lang="en" class="long-text-view">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,7 +10,6 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./src/style.css" />
-    <link rel="stylesheet" href="./src/freakflags.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
@@ -19,16 +18,38 @@
     />
     <title>Texto longo</title>
   </head>
-  <body class="textoLongo">
-    <!-- PESQUISA -->
-    <div id="pesquisa">
-      <i class="fas fa-times whiteText closeIcon fa-2x"></i>
-      <div
-        id="TelaPesquisa"
-        class="border-bottom border-light row d-flex justify-content-center align-items-center m-0 pb-1"
-      >
-        <input type="text" placeholder="Faça a sua busca" id="pesquisaInput" />
-        <i class="fas fa-search whiteText SearchIcon"></i>
+  <body class="long-text-view">
+    <!-- MODAL -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header d-flex justify-content-end">
+            <button type="button" class="btn" data-dismiss="modal">
+              <i class="fas fa-times white-text closeIcon fa-lg"></i>
+            </button>
+          </div>
+          <div
+            class="modal-body d-flex align-items-center justify-content-center"
+          >
+            <div
+              class="search-screen border-bottom border-light row d-flex justify-content-center align-items-center m-0 pb-1"
+            >
+              <input
+                type="text"
+                placeholder="Faça a sua busca"
+                class="search-input"
+              />
+              <i class="fas fa-search white-text SearchIcon"></i>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <!-- NAVBAR -->
@@ -233,20 +254,28 @@
             </li>
           </ul>
         </div>
-        <div class="d-none d-lg-block">
-          <i class="fas fa-search"></i>
+        <div class="d-none d-lg-block search-button">
+          <i
+            class="fas fa-search"
+            data-toggle="modal"
+            data-target="#exampleModal"
+          ></i>
         </div>
       </div>
     </nav>
     <!-- JUMBOTRON -->
-    <div class="jumbotron big-banner mb-0 jumbotron-textoLongo">
+    <div class="jumbotron big-banner mb-0 jumbotron-long-text-view">
       <div class="container">
-        <div class="col-lg-8 mt-5 pt-4 whiteText">
+        <div class="col-lg-8 mt-5 pt-4 white-text">
           <div aria-label="breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="#">Lorem Ipsum</a></li>
-              <li class="breadcrumb-item d-none d-lg-block"><a href="#">Lorem Ipsum</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Lorem Ipsum</li>
+              <li class="breadcrumb-item d-none d-lg-block">
+                <a href="#">Lorem Ipsum</a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Lorem Ipsum
+              </li>
             </ol>
           </div>
           <h1>
@@ -255,13 +284,15 @@
           </h1>
         </div>
       </div>
-      <div id="componentStyleScreen">
-        <div class="componentTextoLongo"></div>
+      <div id="component-style-screen">
+        <div class="component-long-text-view"></div>
       </div>
       <div id="navbarFull"></div>
     </div>
     <!-- CONTENT -->
-    <div class="container d-flex justify-content-between content-container-texto-longo">
+    <div
+      class="container d-flex justify-content-between content-container-texto-longo"
+    >
       <div class="container m-0 col-lg-8 col-xl-8">
         <p class="texto-longo-desc">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere
@@ -330,7 +361,7 @@
           </li>
         </ul>
         <a href="#" class="d-lg-flex d-xl-flex d-none justify-content-end mb-5">
-          <button type="button" class="btn btn-sm botaoStyle">
+          <button type="button" class="btn btn-sm botao-style">
             LOREM IPSUM
           </button>
         </a>
@@ -338,75 +369,52 @@
       <div class="row d-none d-lg-block d-xl-block">
         <div class="mb-3">
           <!-- box -->
-          <div class="box sumario">
-            <div class="edge-triangle"></div>
+          <div class="box sumary">
             <div class="content-box p-3">
               <p class="h6 m-0 textoH6">Lorem ipsum</p>
               <hr class="h-hr" />
               <a href="#">
-                <p class="lead parag Navigator">
-                  Lorem ipsum dolor sit
-                </p>
+                <p class="lead parag navigator">Lorem ipsum dolor sit</p>
               </a>
               <hr />
               <a href="#">
-                <p class="lead parag Navigator">
-                  Lorem ipsum dolor sit
-                </p>
+                <p class="lead parag navigator">Lorem ipsum dolor sit</p>
               </a>
               <hr />
               <a href="#">
-                <p class="lead parag Navigator">
-                  Lorem ipsum dolor sit
-                </p>
+                <p class="lead parag navigator">Lorem ipsum dolor sit</p>
               </a>
               <hr />
               <a href="#">
-                <p class="lead parag Navigator">
-                  Lorem ipsum dolor sit
-                </p>
+                <p class="lead parag navigator">Lorem ipsum dolor sit</p>
               </a>
               <hr />
               <a href="#">
-                <p class="lead parag Navigator">
-                  Lorem ipsum dolor sit
-                </p>
+                <p class="lead parag navigator">Lorem ipsum dolor sit</p>
               </a>
               <hr />
               <a href="#">
-                <p class="lead parag Navigator">
-                  Lorem ipsum dolor sit
-                </p>
+                <p class="lead parag navigator">Lorem ipsum dolor sit</p>
               </a>
               <hr />
               <a href="#">
-                <p class="lead parag Navigator">
-                  Lorem ipsum dolor sit
-                </p>
+                <p class="lead parag navigator">Lorem ipsum dolor sit</p>
               </a>
               <hr />
               <a href="#">
-                <p class="lead parag Navigator">
-                  Lorem ipsum dolor sit
-                </p>
+                <p class="lead parag navigator">Lorem ipsum dolor sit</p>
               </a>
               <hr />
               <a href="#">
-                <p class="lead parag Navigator">
-                  Lorem ipsum dolor sit
-                </p>
+                <p class="lead parag navigator">Lorem ipsum dolor sit</p>
               </a>
               <hr />
               <a href="#">
-                <p class="lead parag Navigator">
-                  Lorem ipsum dolor sit
-                </p>
+                <p class="lead parag navigator">Lorem ipsum dolor sit</p>
               </a>
               <hr />
               <a href="#">
-                <p class="lead parag Navigator">
-                  Lorem ipsum dolor sit
-                </p>
+                <p class="lead parag navigator">Lorem ipsum dolor sit</p>
               </a>
             </div>
           </div>
@@ -418,63 +426,40 @@
       <div class="container d-flex align-items-end flex-column">
         <div class="container d-flex row justify-content-between pr-5 lead">
           <div class="d-flex mb-5 mr-3">
-            <a class="navbar-brand m-0 p-0 mr-3 d-flex align-items-start" href="#">
+            <a
+              class="navbar-brand m-0 p-0 mr-3 d-flex align-items-start"
+              href="#"
+            >
               <img src="./static/images/tegra-logo.svg" />
             </a>
             <p class="d-inline-block lead text-dec text-left m-0">
               Relações com<br />Investidores
             </p>
           </div>
-          <div class="footerOnlyElement">
-            <a href="#" class="d-block parag pb-2"
-              >Lorem ipsum dolor sit</a
-            >
+          <div class="footer-only-element">
+            <a href="#" class="d-block parag pb-2">Lorem ipsum dolor sit</a>
             <a href="#" class="d-block parag pb-2">Lorem ipsum</a>
-            <a href="#" class="d-block parag pb-2"
-              >Lorem ipsum dolor sit</a
-            >
+            <a href="#" class="d-block parag pb-2">Lorem ipsum dolor sit</a>
             <a href="#" class="d-block parag pb-2">Lorem ipsum</a>
-            <a href="#" class="d-block parag pb-2"
-              >Lorem ipsum dolor sit</a
-            >
+            <a href="#" class="d-block parag pb-2">Lorem ipsum dolor sit</a>
             <a href="#" class="d-block parag pb-2">Lorem ipsum</a>
-            <a href="#" class="d-block parag pb-2"
-              >Lorem ipsum dolor sit</a
-            >
+            <a href="#" class="d-block parag pb-2">Lorem ipsum dolor sit</a>
           </div>
-          <div
-            class="pl-2 footer-hiden-element d-none d-lg-inline d-xl-inline"
-          >
-            <a href="#" class="d-block parag pb-2"
-              >Lorem ipsum dolor sit</a
-            >
+          <div class="pl-2 footer-hiden-element d-none d-lg-inline d-xl-inline">
+            <a href="#" class="d-block parag pb-2">Lorem ipsum dolor sit</a>
             <a href="#" class="d-block parag pb-2">Lorem ipsum</a>
-            <a href="#" class="d-block parag pb-2"
-              >Lorem ipsum dolor sit</a
-            >
+            <a href="#" class="d-block parag pb-2">Lorem ipsum dolor sit</a>
             <a href="#" class="d-block parag pb-2">Lorem ipsum</a>
-            <a href="#" class="d-block parag pb-2"
-              >Lorem ipsum dolor sit</a
-            >
+            <a href="#" class="d-block parag pb-2">Lorem ipsum dolor sit</a>
             <a href="#" class="d-block parag pb-2">Lorem ipsum</a>
-            <a href="#" class="d-block parag pb-2"
-              >Lorem ipsum dolor sit</a
-            >
+            <a href="#" class="d-block parag pb-2">Lorem ipsum dolor sit</a>
           </div>
-          <div
-            class="pl-2 footer-hiden-element d-none d-lg-inline d-xl-inline"
-          >
-            <a href="#" class="d-block parag pb-2"
-              >Lorem ipsum dolor sit</a
-            >
+          <div class="pl-2 footer-hiden-element d-none d-lg-inline d-xl-inline">
+            <a href="#" class="d-block parag pb-2">Lorem ipsum dolor sit</a>
             <a href="#" class="d-block parag pb-2">Lorem ipsum</a>
-            <a href="#" class="d-block parag pb-2"
-              >Lorem ipsum dolor sit</a
-            >
+            <a href="#" class="d-block parag pb-2">Lorem ipsum dolor sit</a>
             <a href="#" class="d-block parag pb-2">Lorem ipsum</a>
-            <a href="#" class="d-block parag pb-2"
-              >Lorem ipsum dolor sit</a
-            >
+            <a href="#" class="d-block parag pb-2">Lorem ipsum dolor sit</a>
           </div>
         </div>
         <p class="parag lead mt-3 mb-3 text-right">
