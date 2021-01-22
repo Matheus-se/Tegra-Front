@@ -79,6 +79,12 @@ nav * {
   flex-direction: column;
   justify-content: space-around;
 }
+.swiper-wrapper.quarters {
+  position: relative;
+  width: 100%;
+  flex: 0 0 45%;
+  max-width: 45%;
+}
 .swiper-container-home {
   overflow: hidden;
 }
@@ -91,7 +97,7 @@ nav * {
   border: 0;
 }
 .quarters {
-  width: auto;
+  width: auto !important;
 }
 .swiper-button.swiper-button-prev {
   transform: translate(-100%, 50%);
