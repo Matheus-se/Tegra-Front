@@ -14,3 +14,13 @@ const swiper = new Swiper(".swiper-container", {
     prevEl: '.swiper-button-prev',
   },
 });
+
+const swiper2 = new Swiper(".swiper-container-home", {
+  slidesPerView: 1,
+  spaceBetween: 0,
+  
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
