@@ -79,6 +79,9 @@ nav * {
   flex-direction: column;
   justify-content: space-around;
 }
+.swiper-container-home {
+  overflow: hidden;
+}
 .swiper-button {
   position: relative;
   font-weight: bold;

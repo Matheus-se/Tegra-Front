@@ -17,6 +17,10 @@ const swiper = new Swiper(".swiper-container", {
 
 const swiper2 = new Swiper(".swiper-container-home", {
   slidesPerView: 1,
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true
+  },
   
   navigation: {
     nextEl: '.swiper-button-next',
