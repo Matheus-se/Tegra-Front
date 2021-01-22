@@ -90,6 +90,9 @@ nav * {
   outline: none;
   border: 0;
 }
+.quarters {
+  width: auto;
+}
 .swiper-button.swiper-button-prev {
   transform: translate(-100%, 50%);
   -moz-transform: translate(-100%, 50%);
