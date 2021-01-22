@@ -91,7 +91,7 @@ nav * {
   border: 0;
 }
 .quarters {
-  width: auto;
+  width: auto !important;
 }
 .swiper-button.swiper-button-prev {
   transform: translate(-100%, 50%);
