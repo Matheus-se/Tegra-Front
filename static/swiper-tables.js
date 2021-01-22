@@ -17,7 +17,6 @@ const swiper = new Swiper(".swiper-container", {
 
 const swiper2 = new Swiper(".swiper-container-home", {
   slidesPerView: 1,
-  spaceBetween: 0,
   
   navigation: {
     nextEl: '.swiper-button-next',
