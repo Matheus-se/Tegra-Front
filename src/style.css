@@ -79,25 +79,17 @@ nav * {
   flex-direction: column;
   justify-content: space-around;
 }
-.swiper-wrapper.quarters {
-  position: relative;
-  width: 100%;
-  flex: 0 0 45%;
-  max-width: 45%;
-}
 .swiper-container-home {
   overflow: hidden;
 }
-.swiper-button {
-  position: relative;
+.swipper-button {
+  position: relative !important;
   font-weight: bold;
-  height: 20%;
-  width: 20%;
   outline: none;
   border: 0;
 }
-.quarters {
-  width: auto !important;
+.swiper-container-quarters .swipper-wrapper {
+  width: 100px;
 }
 .swiper-button.swiper-button-prev {
   transform: translate(-100%, 50%);
