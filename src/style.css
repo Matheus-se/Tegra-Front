@@ -88,8 +88,18 @@ nav * {
   outline: none;
   border: 0;
 }
-.swiper-container-quarters .swiper-slide {
-  width: auto !important;
+.title-first-card {
+  position: relative;
+}
+.swiper-container-quarters {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.swiper-slide {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
 .swiper-button.swiper-button-prev {
   transform: translate(-100%, 50%);
