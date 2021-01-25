@@ -91,21 +91,27 @@ nav * {
 .title-first-card {
   position: relative;
 }
-.swiper-container-quarters {
-  position: absolute;
-  top: 0;
-  right: 0;
+.arrow-swiper-container {
+  position: relative;
 }
-.swiper-slide {
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
+.arrow-swiper-container .swipper-button {
+  display: inline;
 }
 .swiper-button.swiper-button-prev {
   transform: translate(-100%, 50%);
   -moz-transform: translate(-100%, 50%);
   -ms-transform: translate(-100%, 50%); /* IE 9 */
   -webkit-transform: translate(-100%, 50%); /* Chrome, Safari, Opera */
+}
+.arrow-swiper-container .swiper-button-next{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.arrow-swiper-container .swiper-button-prev{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 .swiper-button.swiper-button-next {
   transform: translate(80%, 50%);

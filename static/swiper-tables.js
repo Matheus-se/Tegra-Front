@@ -27,14 +27,3 @@ const swiper2 = new Swiper(".swiper-container-home", {
     prevEl: '.swiper-button-prev',
   },
 });
-
-const swiper3 = new Swiper(".swiper-container-quarters", {
-  slidesPerView: "auto",
-  effect: 'fade',
-  fadeEffect: {
-    crossFade: true
-  },
-  CSSWidthAndHeight: true,
-  visibilityFullFit: true,
-  autoResize: false,
-});
