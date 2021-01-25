@@ -88,8 +88,8 @@ nav * {
   outline: none;
   border: 0;
 }
-.swiper-container-quarters .swipper-wrapper {
-  width: 100px;
+.swiper-container-quarters .swiper-slide {
+  width: auto;
 }
 .swiper-button.swiper-button-prev {
   transform: translate(-100%, 50%);
