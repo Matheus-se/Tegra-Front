@@ -34,5 +34,7 @@ const swiper3 = new Swiper(".swiper-container-quarters", {
   fadeEffect: {
     crossFade: true
   },
-  CSSWidthAndHeight: true
+  CSSWidthAndHeight: true,
+  visibilityFullFit: true,
+  autoResize: false,
 });
