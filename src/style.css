@@ -89,7 +89,7 @@ nav * {
   border: 0;
 }
 .swiper-container-quarters .swiper-slide {
-  width: auto;
+  width: auto !important;
 }
 .swiper-button.swiper-button-prev {
   transform: translate(-100%, 50%);
